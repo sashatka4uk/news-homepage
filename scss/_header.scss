@@ -3,8 +3,14 @@
   align-items: center;
   justify-content: flex-end;
   margin: 89px 0 55px;
+  @media (max-width: 768px) {
+    position: relative;
+    margin: 28px 0 32px;
+  }
 
   &__logo {
     margin-right: auto;
   }
+
+  // Mobile Navigation
 }

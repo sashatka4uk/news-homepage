@@ -13,6 +13,9 @@
     line-height: 26px;
     color: $color-Grayish-blue;
     padding-bottom: 29px;
+    @media (max-width: 768px) {
+      max-width: 343px;
+    }
   }
 
   &:not(:last-child) {

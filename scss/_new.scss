@@ -4,6 +4,9 @@
   background-color: $color-ery-dark-blue;
   padding: 32px 24px;
   flex: 0 0 350px;
+  @media (max-width: 768px) {
+    flex: 0 0 343px;
+  }
 
   &__heading {
     color: #e9aa52;

@@ -52,6 +52,25 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
 body {
   background-color: #fffdfa;
+}
+
+.desktop__hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop__hidden {
+    display: block;
+  }
+
+  .container {
+    max-width: 37.5rem;
+    padding: 0 16px;
+  }
 }

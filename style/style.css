@@ -52,20 +52,52 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 body {
   background-color: #fffdfa;
 }
 
+.desktop__hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop__hidden {
+    display: block;
+  }
+  .container {
+    max-width: 37.5rem;
+    padding: 0 16px;
+  }
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin: 89px 0 55px;
 }
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    margin: 28px 0 32px;
+  }
+}
 .header__logo {
   margin-right: auto;
 }
 
+.nav {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 .nav__list {
   display: flex;
   column-gap: 40px;
@@ -84,20 +116,52 @@ body {
   column-gap: 30px;
   margin-bottom: 71px;
 }
+@media (max-width: 1110px) {
+  .recent {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .recent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .article {
   display: flex;
   flex-direction: column;
+  flex: 0 0 730px;
   row-gap: 28px;
+}
+@media (max-width: 768px) {
+  .article {
+    flex: 0 0 350px;
+  }
 }
 .article__content {
   display: flex;
   column-gap: 30px;
 }
+@media (max-width: 768px) {
+  .article__content {
+    display: block;
+  }
+}
 .article__header {
   font-size: 56px;
   line-height: 56px;
   color: #00001a;
+}
+@media (max-width: 768px) {
+  .article__header {
+    max-width: 343px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
 }
 .article__description {
   display: flex;
@@ -111,15 +175,24 @@ body {
   line-height: 26px;
   color: #5e607a;
 }
+@media (max-width: 768px) {
+  .article__text {
+    max-width: 343px;
+  }
+}
 
 .popular {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
   margin-bottom: 129px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .popular__article {
   display: flex;
   column-gap: 24px;
+  flex: 0 0 350px;
 }
 .popular__article:hover .popular__hading {
   cursor: pointer;
@@ -149,6 +222,11 @@ body {
   padding: 32px 24px;
   flex: 0 0 350px;
 }
+@media (max-width: 768px) {
+  .new {
+    flex: 0 0 343px;
+  }
+}
 .new__heading {
   color: #e9aa52;
   font-size: 40px;
@@ -170,6 +248,11 @@ body {
   line-height: 26px;
   color: #c5c6ce;
   padding-bottom: 29px;
+}
+@media (max-width: 768px) {
+  .post__text {
+    max-width: 343px;
+  }
 }
 .post:not(:last-child) {
   border-bottom: 1px solid #5e607a;

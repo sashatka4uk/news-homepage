@@ -2,11 +2,17 @@
 
 .popular {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
   margin-bottom: 129px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
   &__article {
     display: flex;
+
     column-gap: 24px;
+    flex: 0 0 350px;
     &:hover .popular__hading {
       cursor: pointer;
       color: $color-Soft-red;
