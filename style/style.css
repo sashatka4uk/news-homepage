@@ -2,6 +2,9 @@
     # Font
 \*************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*************************\
+    # Variables
+\*************************/
 .inter-regular {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -74,6 +77,9 @@ body {
     padding: 0 16px;
   }
 }
+/*************************\
+    # Header
+\*************************/
 .header {
   display: flex;
   align-items: center;
@@ -97,6 +103,9 @@ body {
   }
 }
 
+/*************************\
+    # Nav
+\*************************/
 .nav {
   position: relative;
 }
@@ -139,6 +148,9 @@ body {
   color: #f15e50;
 }
 
+/*************************\
+    # Recent
+\*************************/
 .recent {
   display: flex;
   column-gap: 30px;
@@ -158,6 +170,9 @@ body {
   }
 }
 
+/*************************\
+    # Article
+\*************************/
 .article {
   display: flex;
   flex-direction: column;
@@ -209,6 +224,9 @@ body {
   }
 }
 
+/*************************\
+    # Popular
+\*************************/
 .popular {
   display: flex;
   gap: 30px;
@@ -245,6 +263,9 @@ body {
   color: #5e607a;
 }
 
+/*************************\
+    # New
+\*************************/
 .new {
   background-color: #00001a;
   padding: 32px 24px;
@@ -262,6 +283,9 @@ body {
   margin-bottom: 39px;
 }
 
+/*************************\
+    # Post
+\*************************/
 .post {
   margin-bottom: 30px;
 }
@@ -293,6 +317,9 @@ body {
   color: #e9aa52;
 }
 
+/*************************\
+    # Btn
+\*************************/
 .btn {
   display: inline-block;
   padding: 13px 35px 11px 31px;
