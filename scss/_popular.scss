@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+.popular {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 129px;
+  &__article {
+    display: flex;
+    column-gap: 24px;
+    &:hover .popular__hading {
+      cursor: pointer;
+      color: $color-Soft-red;
+    }
+  }
+
+  &__num {
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-Soft-red;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+  &__hading {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-ery-dark-blue;
+    margin-bottom: 9px;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 26px;
+    color: #5e607a;
+  }
+}

@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+.nav {
+  &__list {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 26px;
+    color: $color-text;
+
+    &:hover {
+      color: $color-Soft-red;
+    }
+  }
+}

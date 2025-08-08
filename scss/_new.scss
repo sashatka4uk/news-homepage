@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+.new {
+  background-color: $color-ery-dark-blue;
+  padding: 32px 24px;
+  flex: 0 0 350px;
+
+  &__heading {
+    color: #e9aa52;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 39px;
+  }
+}

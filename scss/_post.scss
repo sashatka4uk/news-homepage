@@ -1,0 +1,30 @@
+@use "variables" as *;
+.post {
+  margin-bottom: 30px;
+  &__heading {
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-Off-white;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 26px;
+    color: $color-Grayish-blue;
+    padding-bottom: 29px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #5e607a;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  &:hover .post__heading {
+    cursor: pointer;
+    color: #e9aa52;
+  }
+}
