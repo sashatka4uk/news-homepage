@@ -11,6 +11,10 @@
   &__logo {
     margin-right: auto;
   }
-
-  // Mobile Navigation
+}
+.logo__img {
+  @media (max-width: 768px) {
+    width: 45px;
+    height: 28px;
+  }
 }
